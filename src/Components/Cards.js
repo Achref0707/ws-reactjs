@@ -1,38 +1,80 @@
 import React from "react";
 import "./Cards.css"
-import Card from "react-bootstrap/Card";
+import vid from "../Porsche 911.1 GT3 EDIT.mp4"
+import HoverVideoPlayer from 'react-hover-video-player';
 const Cards = () => {
   return (
-    <div>
-       {/* <Card className="bg-dark text-white" style={{borderRadius:"0px",width:"400px",height:"400px"}}>
-        <Card.Img
-          src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Porsche/911/7652/1677566789939/front-left-side-47.jpg"
-          alt="Card image" style={{height:"400px"}}
-        />
-        <Card.ImgOverlay>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-          <Card.Text>Last updated 3 mins ago</Card.Text>
-        </Card.ImgOverlay>
-      </Card> */}
+    <div className="cards">
       <div className="card">
-          <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Porsche/911/7652/1677566789939/front-left-side-47.jpg" alt="404"/>
-         <div className="card-cont">
-          <div> 
-           <h1>718</h1>
-           <h4>à partir de TND 292 000,00 TTC Prix client conseillé</h4>
-           </div>
-           <div className="btn1">
-           <button class="button-57 button1"  style={{backgroundColor:"white"}}><span class="text">configurer</span></button>
-           <button class="button-57 button2"  style={{backgroundColor:"transparent" }}><span class="text">Vue d'ensemble</span></button>
-
-           </div>
-        </div>
+      <HoverVideoPlayer
+      videoSrc={vid}
+      pausedOverlay={
+        <img
+          src="https://w.forfun.com/fetch/00/00c59480ac71120379b0fa2b82a03968.jpeg"
+          alt=""
+          style={{
+            // Make the image expand to cover the video's dimensions
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
+      }
+    />
+      </div>
+      <div className="card">
+      <HoverVideoPlayer
+      videoSrc={vid}
+      pausedOverlay={
+        <img
+          src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9yc2NoZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+          alt=""
+          style={{
+            // Make the image expand to cover the video's dimensions
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
+      }
+    />
+      </div>
+      <div className="card">
+      <HoverVideoPlayer
+      videoSrc={vid}
+      pausedOverlay={
+        <img
+          src="https://w0.peakpx.com/wallpaper/215/305/HD-wallpaper-porsche-ice.jpg"
+          alt=""
+          style={{
+            // Make the image expand to cover the video's dimensions
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
+      }
+    />
+      </div>
+      <div className="card">
+      <HoverVideoPlayer
+      videoSrc={vid}
+      pausedOverlay={
+        <img
+          src="https://wallpapercrafter.com/desktop/301749-Vehicles-Porsche-Cayman-GT4-Phone-Wallpaper.jpg"
+          alt=""
+          style={{
+            // Make the image expand to cover the video's dimensions
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
+      }
+    />
       </div>
     </div>
+    
   );
 };
 
